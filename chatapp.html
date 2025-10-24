@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat Room</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="position:relative;">
+      <h1>Welcome to Chat Room</h1>
+      <h2>Realtime Chat</h2>
+
+      <button id="logoutBtn" class="logout-btn" onclick="logout()">Logout</button>
+      <button id="themeToggleBtn" class="logout-btn" style="right:140px; background:transparent;" >Theme</button>
+
+      <div id="chat-box"></div>
+
+      <div style="display:flex; gap:8px; align-items:center; margin-top:12px;">
+        <input type="text" id="message" placeholder="Type a message" />
+        <button class="btn" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
